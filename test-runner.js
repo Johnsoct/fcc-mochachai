@@ -22,6 +22,7 @@ fs.readdirSync(testDir).filter(function (file) {
 
 const emitter = new EventEmitter();
 emitter.run = function () {
+    console.log('test-runner.js: Tests are running')
 
     const tests = [];
     let context = "";
